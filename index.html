@@ -134,26 +134,31 @@
           <div class="container">
             <h2 class="section-title"><span>CONSULTAS</span></h2>
             <div class="main-action">
-              <form method="post" action="contact.php" name="contactform" id="contactform">
+              <form method="post" action="" name="contactform" id="contactform">
                 <div class="results"></div>
                 <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label class="sr-only">Email</label>
-                      <input name="subject" type="text" class="form-control" placeholder="Email" required>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <input name="subject" type="text" class="form-control" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only">Name</label>
+                        <input name="name" type="text" class="form-control" placeholder="Name" required>
+                      </div>
+                      <select class="form-control">
+                        <option>Albaida del Aljarafe</option>
+                        <option>Aznalcazar</option>
+                        <option>Camas</option>
+                        <option>Benacazón</option>
+                        <option>Cañada Rosal</option>
+                      </select>
                     </div>
-                    <div class="form-group">
-                      <label class="sr-only">Name</label>
-                      <input name="name" type="text" class="form-control" placeholder="Name" required>
+
+                    <div class="row" style="padding: 15px;">
+                      <input class="btn btn-primary" type="submit" onclick="EnviarConsulta()" value="Enviar">
                     </div>
-                    <select class="form-control">
-                      <option>Albaida del Aljarafe</option>
-                      <option>Aznalcazar</option>
-                      <option>Camas</option>
-                      <option>Benacazón</option>
-                      <option>Cañada Rosal</option>
-                    </select>
-                    <input class="btn btn-primary" type="submit" onclick="EnviarConsulta()" value="Enviar">
                   </div>
 
                   <div class="col-sm-6">
