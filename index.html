@@ -278,11 +278,10 @@
     <script>
     function showMailingPopUp() {
       console.log();
-      require(
-        ["mojo/signup-forms/Loader"],
-        function(L) {
-          L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"279b072f7731d3c44289c5ffd","lid":"00ebaa9fc8"})
-        });
+      require(["mojo/signup-forms/Loader"],
+      function(L) {
+        L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"279b072f7731d3c44289c5ffd","lid":"00ebaa9fc8"})
+      });
     };
     document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
     </script>
